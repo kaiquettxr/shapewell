@@ -1,0 +1,17 @@
+/* Shapewell legal pages. Colors and fonts from design/tokens.json (dark theme). */
+:root { --night:#0F0D0C; --surface:#1B1816; --line:#3A3430; --ink:#F6F0EA; --muted:#B3A89D; --rose:#E8B9A0; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--night); color:var(--ink); font:16px/1.6 Inter, system-ui, -apple-system, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 24px 80px; }
+.brand { font-family:"Instrument Serif", Georgia, serif; font-size:28px; color:var(--ink); text-decoration:none; }
+.brand em { color:var(--rose); }
+h1 { font-family:"Instrument Serif", Georgia, serif; font-weight:400; font-size:44px; line-height:1.05; margin:32px 0 8px; }
+h2 { font-size:20px; margin:36px 0 8px; }
+p, li { color:var(--muted); }
+strong { color:var(--ink); }
+a { color:var(--rose); }
+.meta { font-size:14px; }
+table { width:100%; border-collapse:collapse; font-size:14px; margin:12px 0; }
+th, td { text-align:left; padding:8px; border-bottom:1px solid var(--line); vertical-align:top; color:var(--muted); }
+th { color:var(--ink); font-weight:600; }
+footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:14px; color:var(--muted); }

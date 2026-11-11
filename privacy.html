@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Shapewell</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<!-- Source of truth: docs/dados.md, docs/conformidade.md, docs/seguranca.md. Keep in step with the app.
+     Draft until the US privacy lawyer reviews it (docs/progresso.md). -->
+<a class="brand" href="index.html">Shape<em>well</em></a>
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: November 5, 2026</p>
+
+<p>Shapewell is a fitness and habits app for adults 18+. It reads your starting point, builds a 90-day plan around your body, your taste and your schedule, and has an AI coach that adjusts the plan. This policy explains what we collect, why, who we share it with and the choices you have. We collect as little as we can.</p>
+<p>Shapewell is run by Kaique Teixeira ("we", "us"). Contact: <a href="mailto:kaique.txr18@gmail.com">kaique.txr18@gmail.com</a>.</p>
+
+<h2>The short version</h2>
+<ul>
+  <li><strong>Your scan and progress photos stay on your iPhone.</strong> The body scan runs on your phone; only measurements (numbers, not images) are sent.</li>
+  <li>Your quiz answers, plan, logged workouts and habits, and coach messages are stored with your account so the app works across sessions.</li>
+  <li>Reports, plans and coach replies are written by Google Gemini, our AI provider.</li>
+  <li>No advertising trackers. We do not sell or share your data for advertising.</li>
+  <li>You can delete your account and all its data anytime in Settings.</li>
+</ul>
+
+<h2>1. Photos</h2>
+<p>The body scan uses your camera. Pose detection runs entirely on your iPhone and turns your photos into posture measurements (numbers, not images).</p>
+<ul>
+  <li><strong>Scan photos</strong> (front, side and face) stay on your iPhone. They are not sent to our servers or to our AI provider.</li>
+  <li><strong>Progress photos</strong> are kept only in the app's private folder on your iPhone, not in iCloud backups. They are deleted if you delete the app. They go to your photo library only when you tap Save to Photos.</li>
+  <li>If a future version offers photo analysis by AI, it will be off until you give separate, explicit consent in the app, and we will update this policy first. Your face photo will never leave your phone.</li>
+</ul>
+<p>We do not create or keep face geometry or any other biometric identifier.</p>
+
+<h2>2. What we collect and why</h2>
+<table>
+  <tr><th>Data</th><th>Why</th><th>Where</th></tr>
+  <tr><td>Quiz answers: goal, sex, age, height, weight, what you enjoy, where and when you train, equipment, and any limitations you share (for example pain areas, pregnancy or a recent injury)</td><td>To build your report and plan safely</td><td>Our servers, linked to your account</td></tr>
+  <tr><td>Posture measurements from the scan (numbers, not images)</td><td>To write your report</td><td>Sent to our AI provider; not stored on our servers</td></tr>
+  <tr><td>Your report and your 90-day plan</td><td>To show and adjust your plan</td><td>Our servers</td></tr>
+  <tr><td>Workouts and habits you log</td><td>To track progress and your weekly summary</td><td>Our servers</td></tr>
+  <tr><td>Coach messages</td><td>To answer you and change your plan when you ask</td><td>Our servers, deleted after 90 days</td></tr>
+  <tr><td>Subscription status</td><td>To unlock your plan and coach</td><td>Our servers and RevenueCat</td></tr>
+  <tr><td>Sign in with Apple identifier (and Apple's private relay email, if Apple sends it)</td><td>To keep your plan when you change phones</td><td>Our servers</td></tr>
+  <tr><td>Anonymous app events (for example "paywall viewed")</td><td>To improve the app</td><td>PostHog (US)</td></tr>
+</table>
+<p>Information about your body, limitations, pregnancy, workouts and coach messages can be health data. We use it only to provide the app to you, never for advertising.</p>
+<p>We never collect your card details (Apple handles payments), your contacts, your location or your photo library.</p>
+
+<h2>3. AI</h2>
+<p>Your report, your plan and coach replies are written by Google Gemini (Google LLC, United States) through Google's paid API. To do that we send it what it needs: your quiz answers and limitations, posture measurements, your plan, and for the coach your message and your last 10 messages. We never send photos. Google may keep this for up to 55 days to detect abuse, and authorized Google staff may review it. Our AI provider key never ships in the app; every request goes through our server.</p>
+<p>AI output can be wrong. Shapewell gives fitness and habit guidance, not medical advice. Body fat is shown as a range and is a visual estimate, not a medical measurement.</p>
+
+<h2>4. Who we share data with</h2>
+<p>Only service providers that help run the app, under their own privacy terms:</p>
+<ul>
+  <li><strong>Supabase</strong> (database, sign-in and server functions; United States).</li>
+  <li><strong>Google</strong> (Gemini AI, as described above).</li>
+  <li><strong>Apple</strong> (payments, Sign in with Apple, and App Attest and DeviceCheck, which confirm requests come from the real app and that a device already used its free report; we keep an App Attest key id linked to your account, but no hardware identifier).</li>
+  <li><strong>RevenueCat</strong> (subscription status; identified by your random Shapewell account id).</li>
+  <li><strong>PostHog</strong> (anonymous usage events, United States; a random install id not linked to your account, IP addresses discarded, no screen recording, and never body, quiz, plan, photo or coach data).</li>
+</ul>
+<p>We do not sell personal data and do not share it for targeted advertising. We may disclose data if the law requires it.</p>
+
+<h2>5. How long we keep it</h2>
+<ul>
+  <li>Account data: until you delete your account.</li>
+  <li>Coach messages and plan change suggestions: 90 days.</li>
+  <li>If you never subscribe, your profile, report, plan and logs are deleted after 90 days. We keep only a mark that a free report was used, with no body data.</li>
+  </ul>
+
+<h2>6. Your choices and rights</h2>
+<ul>
+  <li><strong>Delete your account</strong> in Settings: this deletes all your data on our servers, revokes Sign in with Apple and removes you from RevenueCat. The app also offers to delete your local photos. Deleting the app alone does not delete your account. Cancel an active subscription in your App Store settings.</li>
+    <li><strong>Access, correction or a copy of your data:</strong> email us at <a href="mailto:kaique.txr18@gmail.com">kaique.txr18@gmail.com</a>. We answer within 30 days.</li>
+  <li>Depending on where you live (for example California, Washington, Nevada, Canada, Australia or New Zealand), you may have more rights, such as knowing what we collect, deleting it, or withdrawing consent to health data. We honor these requests for everyone. We will not treat you differently for using them.</li>
+</ul>
+
+<h2>7. Security</h2>
+<p>Data travels encrypted (HTTPS). Each person can only read their own data (row-level security). Server keys are never in the app. If a breach affects your data, we will tell you and the authorities as the law requires.</p>
+
+<h2>8. International transfers</h2>
+<p>We and our providers process data in the United States. If you use Shapewell from Canada, Australia or New Zealand, your data is transferred to and processed in the United States under this policy.</p>
+
+<h2>9. Adults only</h2>
+<p>Shapewell is for adults 18 and older. We do not knowingly collect data from anyone under 18; if we learn we have, we delete it.</p>
+
+<h2>10. Changes</h2>
+<p>If we change this policy in a meaningful way, we will update the date above and post the new version on this page before it applies. Changes that need your consent, such as photo analysis, are asked for in the app.</p>
+
+<footer><a href="terms.html">Terms of Use</a> · <a href="mailto:kaique.txr18@gmail.com">Contact</a></footer>
+</main>
+</body>
+</html>
