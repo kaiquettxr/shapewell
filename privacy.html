@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,90 +10,47 @@
 </head>
 <body>
 <main>
-<!-- Source of truth: docs/dados.md, docs/conformidade.md, docs/seguranca.md. Keep in step with the app.
-     Draft until the US privacy lawyer reviews it (docs/progresso.md). -->
 <a class="brand" href="index.html">Shape<em>well</em></a>
 <h1>Privacy Policy</h1>
-<p class="meta">Last updated: November 11, 2026</p>
+<p class="meta">Last updated: November 20, 2026</p>
 
-<p>Shapewell is a fitness and habits app for adults 18+. It reads your starting point, builds a 90-day plan around your body, your taste and your schedule, and has an AI coach that adjusts the plan. This policy explains what we collect, why, who we share it with and the choices you have. We collect as little as we can.</p>
-<p>Shapewell is run by Kaique Teixeira ("we", "us"). Contact: <a href="mailto:shapewellsupport@gmail.com">shapewellsupport@gmail.com</a>.</p>
+<p>Shapewell is a fitness and habits app for adults 18 and older. It is operated by Kaique Teixeira. For privacy questions or requests, email <a href="mailto:shapewellsupport@gmail.com">shapewellsupport@gmail.com</a>.</p>
 
-<h2>The short version</h2>
+<h2>Camera, scan and progress photos</h2>
+
+<p>Pose detection runs on your iPhone. Your original scan photos (front, side and face) and your progress photos are kept in the app on your iPhone. When you use the iOS photo picker, Shapewell receives only the photo you select. You can save progress photos to your photo library by choosing Save to Photos. We do not send your face photo or use your face to identify you.</p>
+
+<p>If you choose <strong>Allow photo analysis</strong>, the app crops your head out of copies of the front and side photos, reduces each copy to 512 pixels on its longest side, and checks that no face is visible before sending. If the app cannot complete these checks, it does not send the photos. The copies pass through our server to Google Gemini for your report. We keep them on our server only if you separately allow team review. You can still get a report using your quiz answers and available posture measurements if you decline photo analysis. Any body fat range shown is a visual estimate and is not a medical measurement.</p>
+
+<h2>Optional team review</h2>
+
+<p>After you allow photo analysis, <strong>Allow team review</strong> is a separate choice. It is off unless you opt in. If you allow it, authorized Shapewell staff can review the two cropped copies sent to Gemini and a copy of your report to check how the analysis performed. We keep this material in private server storage for up to 48 hours. Declining does not affect your report, plan, subscription or price.</p>
+
+<p>You can turn off team review or photo analysis in Settings under <strong>Your photos</strong>. This stops future team-review storage and requests deletion of the material held for team review. If deletion cannot finish immediately, the app asks you to retry. Deleting your account also deletes the material kept for team review. These controls apply to Shapewell&#x27;s copies. Google handles copies it already received under its abuse-monitoring policy.</p>
+
+<h2>Reports, plans and the AI coach</h2>
+
+<p>With or without photo analysis, Google Gemini receives your quiz answers and available posture measurements to generate your report. We keep your quiz answers, including height, weight and any limitations you share, with your account. We do not store the raw posture measurements on our server. Gemini also uses relevant quiz answers and report information to write your plan.</p>
+
+<p>Before sending your first AI coach message, the app asks you to agree to share coach data with Google Gemini. If you choose <strong>Not now</strong>, the message stays unsent and you can still use the rest of the app. You can turn off <strong>Coach AI</strong> in Settings to stop future messages from being sent. Turning off Coach AI does not delete messages already stored. For an AI reply, we send your new message, up to 10 recent chat messages, applicable quiz answers and limitations, a summary of your report, and relevant plan information. The coach does not receive photos.</p>
+
+<p>If the app detects certain sensitive topics, such as pain, pregnancy or a crisis, the server may return a predefined reply. We may still save that message and include it in the recent chat sent to Gemini when you later ask for an AI reply. We keep coach messages and plan changes for up to 90 days before scheduled cleanup. You can ask us to delete your coach messages sooner at the email above. Google may keep prompts, submitted context and generated responses for up to 55 days to detect and prevent abuse. Authorized Google personnel may review flagged content under <a href="https://aistudio.google.com/docs/usage-policies#how-we-handle-data">Google’s abuse-monitoring policy</a>.</p>
+
+<h2>Other data, providers and retention</h2>
+
 <ul>
-  <li><strong>Your face, original scan photos and progress photos stay on your iPhone.</strong> Pose detection runs on your phone. Only if you agree, covered front and side photos (head removed) go to our AI provider for your report, and are not saved on our servers.</li>
-  <li>Your quiz answers, plan, logged workouts and habits, and coach messages are stored with your account so the app works across sessions.</li>
-  <li>Reports, plans and coach replies are written by Google Gemini, our AI provider.</li>
-  <li>No advertising trackers. We do not sell or share your data for advertising.</li>
-  <li>You can delete your account and all its data anytime in Settings.</li>
+  <li><strong>Account and app activity.</strong> Supabase hosts our account and app data. We store your quiz answers, reports, plan, and workout and habit history so you can use the app and see your progress. We generally keep those records while your account exists. If you remain anonymous and never subscribe, we remove those records after 90 days. We may retain minimal records without body data to enforce the free report limit and prevent abuse.</li>
+  <li><strong>Sign-in and device verification.</strong> Sign in with Apple is optional. If you use it, we store the Apple account identifier and the relay email if Apple provides it. App Attest and DeviceCheck help verify the app and enforce the free report limit. We store an App Attest key identifier linked to your account.</li>
+  <li><strong>Subscriptions.</strong> Apple processes payment. RevenueCat uses a Shapewell account identifier and subscription information to manage access and restore purchases. We do not receive card details.</li>
+  <li><strong>Analytics.</strong> PostHog receives limited in-app usage events and a random installation identifier. We use these events to improve the app. We do not send your photos, quiz answers or coach messages to PostHog. We do not sell your data, use it for targeted advertising or use it to track you across other companies&#x27; apps or websites.</li>
+  <li><strong>Processing locations.</strong> Our service providers may process your information in the United States. We use encrypted connections and restrict access to stored data.</li>
 </ul>
 
-<h2>1. Photos</h2>
-<p>The body scan uses your camera, or for the front and side photos a photo you choose. When you choose one, the app receives only that photo, never your photo library, and removes its location and other details on your iPhone. Pose detection runs entirely on your iPhone and turns your photos into posture measurements (numbers, not images).</p>
-<ul>
-  <li><strong>Photo analysis (optional, with your consent):</strong> to estimate your starting point, including a visual body fat range, the app sends your front and side photos to Google Gemini, our AI provider, through our server. Before anything leaves your phone, the app covers your head, checks that no face is visible (otherwise nothing is sent) and shrinks the photos to 512 pixels. Our server passes them to Gemini and does not save them. Google may keep them for up to 55 days to prevent abuse, and authorized Google staff may review them. You can turn photo analysis off anytime in Settings; without it, your report has no body fat estimate.</li>
-  <li><strong>Your face photo</strong> never leaves your phone. Your original scan photos (front, side and face) stay on your iPhone.</li>
-  <li><strong>Progress photos</strong> are kept only in the app's private folder on your iPhone, not in iCloud backups. They are deleted if you delete the app. They go to your photo library only when you tap Save to Photos.</li>
-</ul>
-<p>We do not create or keep face geometry or any other biometric identifier.</p>
+<h2>Your choices and rights</h2>
 
-<h2>2. What we collect and why</h2>
-<table>
-  <tr><th>Data</th><th>Why</th><th>Where</th></tr>
-  <tr><td>Quiz answers: goal, sex, age, height, weight, what you enjoy, where and when you train, equipment, and any limitations you share (for example pain areas, pregnancy or a recent injury)</td><td>To build your report and plan safely</td><td>Our servers, linked to your account</td></tr>
-  <tr><td>Posture measurements from the scan (numbers, not images)</td><td>To write your report</td><td>Sent to our AI provider; not stored on our servers</td></tr>
-  <tr><td>Covered front and side photos (only with photo analysis on; head removed on your phone, reduced to 512 px)</td><td>To estimate your starting point and body fat range</td><td>Sent to Google Gemini through our server; not stored on our servers. Google may keep them up to 55 days</td></tr>
-  <tr><td>Your report and your 90-day plan</td><td>To show and adjust your plan</td><td>Our servers</td></tr>
-  <tr><td>Workouts and habits you log</td><td>To track progress and your weekly summary</td><td>Our servers</td></tr>
-  <tr><td>Coach messages</td><td>To answer you and change your plan when you ask</td><td>Our servers, deleted after 90 days</td></tr>
-  <tr><td>Subscription status</td><td>To unlock your plan and coach</td><td>Our servers and RevenueCat</td></tr>
-  <tr><td>Sign in with Apple identifier (and Apple's private relay email, if Apple sends it)</td><td>To keep your plan when you change phones</td><td>Our servers</td></tr>
-  <tr><td>Anonymous app events (for example "paywall viewed")</td><td>To improve the app</td><td>PostHog (US)</td></tr>
-</table>
-<p>Information about your body, limitations, pregnancy, workouts and coach messages can be health data. We use it only to provide the app to you, never for advertising.</p>
-<p>We never collect your card details (Apple handles payments), your contacts, your location or your photo library.</p>
+<p>Use <strong>Delete account and data</strong> in Settings to delete your account and app data. If you use Sign in with Apple, we request revocation of that connection. We also request removal of your customer record from RevenueCat. Manage or cancel an active subscription in your App Store settings. Deleting the app alone does not delete your account or cancel a subscription.</p>
 
-<h2>3. AI</h2>
-<p>Your report, your plan and coach replies are written by Google Gemini (Google LLC, United States) through Google's paid API. To do that we send it what it needs: your quiz answers and limitations, posture measurements, your covered front and side photos if you turned on photo analysis (never your face), your plan, and for the coach your message and your last 10 messages. Google may keep this for up to 55 days to detect abuse, and authorized Google staff may review it. Our AI provider key never ships in the app; every request goes through our server.</p>
-<p>AI output can be wrong. Shapewell gives fitness and habit guidance, not medical advice. Body fat is shown as a range and is a visual estimate, not a medical measurement.</p>
-
-<h2>4. Who we share data with</h2>
-<p>Only service providers that help run the app, under their own privacy terms:</p>
-<ul>
-  <li><strong>Supabase</strong> (database, sign-in and server functions; United States).</li>
-  <li><strong>Google</strong> (Gemini AI, as described above).</li>
-  <li><strong>Apple</strong> (payments, Sign in with Apple, and App Attest and DeviceCheck, which confirm requests come from the real app and that a device already used its free report; we keep an App Attest key id linked to your account, but no hardware identifier).</li>
-  <li><strong>RevenueCat</strong> (subscription status; identified by your random Shapewell account id).</li>
-  <li><strong>PostHog</strong> (anonymous usage events, United States; a random install id not linked to your account, IP addresses discarded, no screen recording, and never body, quiz, plan, photo or coach data).</li>
-</ul>
-<p>We do not sell personal data and do not share it for targeted advertising. We may disclose data if the law requires it.</p>
-
-<h2>5. How long we keep it</h2>
-<ul>
-  <li>Account data: until you delete your account.</li>
-  <li>Coach messages and plan change suggestions: 90 days.</li>
-  <li>Covered photos: not stored by us; Google may keep them up to 55 days to prevent abuse.</li>
-  <li>If you never subscribe, your profile, report, plan and logs are deleted after 90 days. We keep only a mark that a free report was used, with no body data.</li>
-  </ul>
-
-<h2>6. Your choices and rights</h2>
-<ul>
-  <li><strong>Delete your account</strong> in Settings: this deletes all your data on our servers, revokes Sign in with Apple and removes you from RevenueCat. The app also offers to delete your local photos. Deleting the app alone does not delete your account. Cancel an active subscription in your App Store settings.</li>
-    <li><strong>Access, correction or a copy of your data:</strong> email us at <a href="mailto:shapewellsupport@gmail.com">shapewellsupport@gmail.com</a>. We answer within 30 days.</li>
-  <li>Depending on where you live (for example California, Washington, Nevada, Canada, Australia or New Zealand), you may have more rights, such as knowing what we collect, deleting it, or withdrawing consent to health data. We honor these requests for everyone. We will not treat you differently for using them.</li>
-</ul>
-
-<h2>7. Security</h2>
-<p>Data travels encrypted (HTTPS). Each person can only read their own data (row-level security). Server keys are never in the app. If a breach affects your data, we will tell you and the authorities as the law requires.</p>
-
-<h2>8. International transfers</h2>
-<p>We and our providers process data in the United States. If you use Shapewell from Canada, Australia or New Zealand, your data is transferred to and processed in the United States under this policy.</p>
-
-<h2>9. Adults only</h2>
-<p>Shapewell is for adults 18 and older. We do not knowingly collect data from anyone under 18; if we learn we have, we delete it.</p>
-
-<h2>10. Changes</h2>
-<p>If we change this policy in a meaningful way, we will update the date above and post the new version on this page before it applies. Changes that need your consent, such as photo analysis, are asked for in the app.</p>
+<p>You can contact us to request access, correction, a copy or deletion of your data, or to withdraw consent for a specific use where applicable. Additional rights may apply where you live. Shapewell is for adults 18 and older. If we learn we have collected data from someone under 18, we delete it. We post updates to this policy here and ask for your permission before applying changes that require it.</p>
 
 <footer><a href="terms.html">Terms of Use</a> · <a href="mailto:shapewellsupport@gmail.com">Contact</a></footer>
 </main>
